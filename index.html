@@ -48,25 +48,40 @@
         }
 
         input {
-          padding: 12px;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 21px;
-          letter-spacing: 0%;
-          display: block;
+          /* Box Model */
+          box-sizing: border-box;
           width: 100%;
-          padding: .375rem .75rem;
+          padding: 12px;
+          margin: 0;
+          border: 1px solid rgb(188, 209, 239);
+          border-radius: var(--bs-border-radius, 0.375rem);
+          box-shadow: 0 0 0 1.53899px rgba(13, 110, 253, 0.098);
+        
+          /* Typography */
+          font-family: inherit;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 21px;
+          letter-spacing: 0;
           color: var(--bs-body-color);
+          text-align: start;
+          text-transform: none;
+        
+          /* Display */
+          display: block;
+          background-color: var(--bs-body-bg, #fff);
+          background-clip: padding-box;
+          appearance: none;
+        
+          /* Transition */
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        
+          /* Other */
+          cursor: text;
           -webkit-appearance: none;
           -moz-appearance: none;
-          appearance: none;
-          background-color: var(--bs-body-bg);
-          background-clip: padding-box;
-          border: var(--bs-border-width) solid var(--bs-border-color);
-          border-radius: var(--bs-border-radius);
-          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         }
-
+        
        button {
           /* Box Model */
           box-sizing: border-box;
